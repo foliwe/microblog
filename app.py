@@ -9,7 +9,7 @@ def create_app():
     password = urllib.parse.quote_plus("FoliMong@1983-2")
 
 
-    url = "mongodb+srv://{}:{}@microblog-application.3dml6.mongodb.net/test".format(username, password)
+    url = "mongodb+srv://{}:{}@microblog.3dml6.mongodb.net/test".format(username, password)
     client = MongoClient(url)
     app.db = client.micro
 
